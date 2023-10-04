@@ -47,7 +47,7 @@ int Window::Initialise()
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
 	// Create the window
-	mainWindow = glfwCreateWindow(width, height, "Marioneta c:", NULL, NULL);
+	mainWindow = glfwCreateWindow(width, height, "The Puppet", NULL, NULL);
 	if (!mainWindow)
 	{
 		printf("Error creating GLFW window!");
@@ -82,6 +82,7 @@ int Window::Initialise()
 	glViewport(0, 0, bufferWidth, bufferHeight);
 
 	glfwSetWindowUserPointer(mainWindow, this);
+	return 0;
 }
 
 void Window::createCallbacks()

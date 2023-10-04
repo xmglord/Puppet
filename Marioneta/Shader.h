@@ -4,8 +4,9 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <cstring>
 
-#include <GL\glew.h>
+#include <GL/glew.h>
 
 class Shader
 {
